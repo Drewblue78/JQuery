@@ -1,10 +1,27 @@
 import Vue from 'vue';
+import * as firebase from 'firebase/app'
+import 'firebase/auth'
 import App from './App.vue';
 
-import "bootstrap";
+const firebaseConfig = {
+  apiKey: "AIzaSyBw_DO1RZhGMfCMnzOcYeE8CIeKPfz9Znk",
+  authDomain: "project-jq.firebaseapp.com",
+  databaseURL: "https://project-jq.firebaseio.com",
+  projectId: "project-jq",
+  storageBucket: "project-jq.appspot.com",
+  messagingSenderId: "324443457992",
+  appId: "1:324443457992:web:24d4c030f2a453bdbe98fd",
+  measurementId: "G-T9Z2L9CNS6"
+};
+
+firebase.initializeApp(firebaseConfig)
 
 Vue.config.productionTip = false;
 
-new Vue({
+window.app = new Vue({
   render: (h) => h(App),
+  data: {
+    loggedIn: false,
+    firebase
+  }
 }).$mount('#app');
