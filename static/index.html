@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Marvel Action Figures</h1>
+        <ul>
+            <li page="#home">Home</li>
+            <li page="#products">Products</li>
+            <li page="#cart">Shopping Cart</li>
+            <li page="#contact">Contact</li>
+        </ul>
+    </header>
+
+    <main id="home">
+        <h2>Home</h2>
+        <article>
+            <h3>Look at the Marvel Toys</h3>
+            <p>We have all kinds of action figures</p>
+        </article>
+        <article>
+            <h3>Buy these action figures</h3>
+            <p>Limited Time</p>
+        </article>
+    </main>
+
+    <main id="products">
+        <h2>Products</h2>
+        <article>
+            <h3>The Incredible Hulk</h3>
+            <p>Smash</p>
+        </article>
+        <article>
+            <h3>Thor</h3>
+            <p>Shocking</p>
+        </article>
+    </main>
+
+    <main id="cart">
+        <h2>Shopping Cart</h2>
+        <article>
+            <h3>The Incredible Hulk</h3>
+            <h4>Quantity: 2</h4>
+        </article>
+        <article>
+            <h3>Thor</h3>
+            <h4>Quantity: 5</h4>
+        </article>
+    </main>
+
+    <main id="contact">
+        <div>
+            <input placeholder="your name" />
+        </div>
+        <textarea cols="30" rows="10"></textarea>
+    </main>
+
+    <script>
+        $(document).ready(event => {
+            showPage("#home")
+
+            $('header li').click(event => {
+                var pageId = $(event.target).attr('page')
+                showPage(pageId)
+            })
+
+        })
+
+        function showPage(id) {
+            $('main').hide()
+            $(id).fadeIn(800)
+        }
+
+    </script>
+
+</body>
+
+</html>

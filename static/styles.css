@@ -1,0 +1,33 @@
+body {
+    background-color: #e40909;
+    color: #eeeeee;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif margin: 0;
+}
+
+header {
+    border: 10px solid grey;
+    background-color: #630000;
+    padding: 2px 10;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+header li:hover {
+    background-color: #7e03cf;
+}
+
+main {
+    margin: 10px;
+    padding: 50px;
+    background-color: #555555;
+}
