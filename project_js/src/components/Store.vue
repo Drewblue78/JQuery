@@ -18,13 +18,13 @@ export default {
   methods: {
     register() {
       this.$root.firebase
-        .auth()
+        .store()
         .createUserWithEmailAndPassword(this.email, this.password)
         .catch(err => console.log(err));
     },
     login() {
       this.$root.firebase
-        .auth()
+        .store()
         .signInWithEmailAndPassword(this.email, this.password)
         .catch(err => console.log(err));
     }

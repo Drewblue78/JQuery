@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <img alt="Marvel" src="./assets/BigMarvel.png" />
     <b-container>
       <Store />
     </b-container>
@@ -9,6 +9,7 @@
 
 <script>
 import Store from "./components/Store.vue";
+
 export default {
   name: "App",
   components: {

@@ -1,6 +1,10 @@
 import Vue from 'vue';
+import BootstrapVue from 'bootstrap-vue';
 import * as firebase from 'firebase/app'
+import 'firebase/analytics'
 import 'firebase/auth'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import App from './App.vue';
 
 const firebaseConfig = {
@@ -15,6 +19,8 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig)
+
+Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
 
