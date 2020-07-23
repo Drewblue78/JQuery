@@ -22,6 +22,8 @@ module.exports = {
     "guard-for-in": "off",
     "arrow-parens": "off",
     "max-len": "off",
-    "no-plusplus": "off"
+    "no-plusplus": "off",
+    'no-unused-vars': 'off'
+
   },
 };

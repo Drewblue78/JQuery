@@ -1,36 +1,17 @@
-<template>
-  <div>
-    <b-form>
-      <b-form-input type="text" v-model="email" />
-      <b-form-input type="password" v-model="password" />
-      <b-button @click="register">Register</b-button>
-      <b-button @click="login">Login</b-button>
-    </b-form>
-  </div>
-</template>
+<div>
+  <b-card
+    title="Card Title"
+    img-src="https://picsum.photos/600/300/?image=25"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      Some quick example text to build on the card title and make up the bulk of the card's content.
+    </b-card-text>
 
-<script>
-export default {
-  data: () => ({
-    email: "",
-    password: ""
-  }),
-  methods: {
-    register() {
-      this.$root.firebase
-        .store()
-        .createUserWithEmailAndPassword(this.email, this.password)
-        .catch(err => console.log(err));
-    },
-    login() {
-      this.$root.firebase
-        .store()
-        .signInWithEmailAndPassword(this.email, this.password)
-        .catch(err => console.log(err));
-    }
-  }
-};
-</script>
-
-<style>
-</style>
+    <b-button href="#" variant="primary">Go somewhere</b-button>
+  </b-card>
+</div>
