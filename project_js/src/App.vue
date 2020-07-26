@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
+      <img alt="Marvel" src="./assets/Marvel.png" />
+      <b-navbar-brand href="#"></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Link</b-nav-item>
-          <b-nav-item href="#" disabled>Disabled</b-nav-item>
+          <b-navbar-brand href="#">Action Figures</b-navbar-brand>
+          <b-nav-item href="#">Home</b-nav-item>
+          <b-nav-item href="#">Store</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -17,45 +18,99 @@
             <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
           </b-nav-form>
-
-          <b-nav-item-dropdown text="Lang" right>
-            <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
-          </b-nav-item-dropdown>
-
-          <b-nav-item-dropdown right>
-            <!-- Using 'button-content' slot -->
-            <template v-slot:button-content>
-              <em>User</em>
-            </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     <br />
-    <img alt="Marvel" src="./assets/BigMarvel.png" />
+    <img alt="BMarvel" src="./assets/BigMarvel.png" />
     <b-container>
       <Login />
     </b-container>
-    <br />>
-    <div>
-      <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
-      >
-        <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
-
-        <b-button href="#" variant="primary">Go somewhere</b-button>
-      </b-card>
+    <br />
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Ironman.png" class="card-img-top" alt="Ironman" />
+            <div class="card-body">
+              <p class="card-text">Ironman</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/CaptainMarvel.png" class="card-img-top" alt="Captian Marvel" />
+            <div class="card-body">
+              <p class="card-text">Captain Marvel</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Hulk.png" class="card-img-top" alt="Hulk" />
+            <div class="card-body">
+              <p class="card-text">Hulk</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Rocket.png" class="card-img-top" alt="Rocket" />
+            <div class="card-body">
+              <p class="card-text">Rocket Racoon</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Spiderman.png" class="card-img-top" alt="Spiderman" />
+            <div class="card-body">
+              <p class="card-text">Spiderman</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Thanos.png" class="card-img-top" alt="Thanos" />
+            <div class="card-body">
+              <p class="card-text">Thanos</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Thor.png" class="card-img-top" alt="Thor" />
+            <div class="card-body">
+              <p class="card-text">Thor</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Venom.png" class="card-img-top" alt="Venom" />
+            <div class="card-body">
+              <p class="card-text">Venom</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/Wolverine.png" class="card-img-top" alt="Wolverine" />
+            <div class="card-body">
+              <p class="card-text">Wolverine</p>
+              <a href="Store" class="btn btn-primary">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <b-container>
       <Store />
