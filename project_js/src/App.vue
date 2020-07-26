@@ -8,8 +8,8 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-navbar-brand href="#">Action Figures</b-navbar-brand>
-          <b-nav-item href="#">Home</b-nav-item>
-          <b-nav-item href="#">Store</b-nav-item>
+          <b-nav-item href="App.vue">Home</b-nav-item>
+          <b-nav-item href="Store1.vue">Store</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -34,7 +34,7 @@
             <img src="./assets/Ironman.png" class="card-img-top" alt="Ironman" />
             <div class="card-body">
               <p class="card-text">Ironman</p>
-              <a href="Store" class="btn btn-primary">Order</a>
+              <a href="Ironman" class="btn btn-primary">Order</a>
             </div>
           </div>
         </div>
@@ -112,9 +112,6 @@
         </div>
       </div>
     </div>
-    <b-container>
-      <Store />
-    </b-container>
   </div>
 </template>
 
