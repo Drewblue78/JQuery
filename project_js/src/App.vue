@@ -8,8 +8,8 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-navbar-brand href="#">Action Figures</b-navbar-brand>
-          <b-nav-item href="App.vue">Home</b-nav-item>
-          <b-nav-item href="Store1.vue">Store</b-nav-item>
+          <b-nav-item onclick="location.href=App.vue">Home</b-nav-item>
+          <b-nav-item onclick="location.href=store.html">Store</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
