@@ -17,7 +17,17 @@
 <script>
 export default {
   data: () => ({
-    products: ["Ironman", "Captain Marvel", "Hulk"]
+    products: [
+      "Ironman",
+      "Captain Marvel",
+      "Hulk",
+      "Rocket",
+      "Spiderman",
+      "Thanos",
+      "Thor",
+      "Venom",
+      "Wolverine"
+    ]
   }),
   methods: {
     addItem(p) {

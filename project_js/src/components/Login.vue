@@ -12,8 +12,8 @@
 <script>
 export default {
   data: () => ({
-    email: "",
-    password: ""
+    email: "username",
+    password: "password"
   }),
   methods: {
     register() {
