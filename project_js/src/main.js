@@ -28,6 +28,8 @@ window.app = new Vue({
   render: (h) => h(App),
   data: {
     loggedIn: false,
-    firebase
+    firebase,
+    page: "home",
+    cart: []
   }
 }).$mount('#app');
